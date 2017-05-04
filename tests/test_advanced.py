@@ -9,7 +9,7 @@ class AdvancedTestSuite(unittest.TestCase):
     """Advanced test cases."""
 
     def test_thoughts(self):
-        self.assertIsNone(cognitive_textanalytics.hmm())
+        self.assertTrue(cognitive_textanalytics.hmm())
 
 
 if __name__ == '__main__':

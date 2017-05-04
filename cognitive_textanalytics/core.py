@@ -8,5 +8,4 @@ def get_hmm():
 
 def hmm():
     """Contemplation..."""
-    if helpers.get_answer():
-        print(get_hmm())
+    return helpers.get_answer()
