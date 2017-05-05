@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lastcoolnameleft/Cognitive-TextAnalytics-Python.svg?branch=master)](https://travis-ci.org/lastcoolnameleft/Cognitive-TextAnalytics-Python)
+
 # Cognitive-TextAnalytics-Python
 Python SDK for the Microsoft Text Analytics API, part of Congitive Services
 
