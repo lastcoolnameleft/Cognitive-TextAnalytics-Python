@@ -90,3 +90,4 @@ ENV/
 
 # Custom
 *.swp
+.DS_Store
