@@ -72,6 +72,6 @@ class Language():
         # Guido bless list comprehension
         data = [dict(id=i, text=x) for i, x in enumerate(input_array, 1)]
         response = self.request(data)
-        return result
+        return response
 
 

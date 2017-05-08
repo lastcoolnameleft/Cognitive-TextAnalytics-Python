@@ -17,3 +17,15 @@ class LanguageTestSuite(unittest.TestCase):
         client = cognitive_textanalytics.language.Language(config.URL, config.KEY)
         lang = client.detect(input_text)
         self.assertEqual('English', lang)
+
+    def test_detect_language_details(self):
+        """Functional test for Detect Language
+        """
+        input_text = "it was the best of times"
+        client = cognitive_textanalytics.language.Language(config.URL, config.KEY)
+        api_response = client.detect_details(input_text)
+        self.assertEqual(1, len(api_response['documents']))
+        self.assertEqual('id', api_response['documents'][0]['id'])
+        # detectedLanguages is closer to spec than auto-generated code (detected_languages)
+        self.assertEqual(1, len(api_response['documents'][0]['detectedLanguages']))
+        self.assertEqual('English', api_response['documents'][0]['detectedLanguages'][0]['name'])
